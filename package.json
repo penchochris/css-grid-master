@@ -1,0 +1,26 @@
+{
+  "name": "css-grid-master",
+  "version": "1.0.0",
+  "description": "CSS Grid Course",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js' --directory --port 7777 --browser 'Firefox'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penchochris/css-grid-master.git"
+  },
+  "keywords": [
+    "css",
+    "grid"
+  ],
+  "author": "Pencho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/penchochris/css-grid-master/issues"
+  },
+  "homepage": "https://github.com/penchochris/css-grid-master#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.5"
+  }
+}
