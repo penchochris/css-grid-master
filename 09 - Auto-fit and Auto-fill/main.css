@@ -4,20 +4,26 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
 }
+
+.autofill {
+    grid-template-columns: repeat(auto-fill, 150px);
+}
+
+.autofit {
+    grid-template-columns: repeat(auto-fit, 150px);
+}
+
 
 .items {
     background-color: #505050;
     border: solid 1px black;
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
     padding: 10px;
 }
 
-.item9 {
-    background-color: mistyrose;
-    grid-column: span 2;
-    grid-row: span 2;
+.item4 {
+    grid-column-end: -1;
 }
