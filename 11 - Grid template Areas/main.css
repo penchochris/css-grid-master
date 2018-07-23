@@ -1,0 +1,38 @@
+body {
+    background-color: #272727;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: repeat(3,minmax(150px, 1fr));
+    grid-template-areas: 
+        "sidebar-1 content sidebar-2"
+        "sidebar-1 content sidebar-2"
+        "footer    footer  footer"      
+}
+
+.items {
+    background-color: #505050;
+    border: solid 1px black;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar-1 {
+    grid-area: sidebar-1;
+}
+
+.sidebar-2 {
+    grid-area: sidebar-2;
+}
+
+.footer {
+    grid-area: footer;
+}
