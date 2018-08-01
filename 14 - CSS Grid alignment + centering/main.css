@@ -1,0 +1,39 @@
+body {
+    background-color: #272727;
+}
+
+/*
+      justify-items:
+      align-items:
+
+      justify-content:
+      align-content:
+
+      align-self:
+      justify-self:
+
+      justify-* is row axis
+      align-* is column axis
+    */
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    height: 500px;
+    border: 10px solid var(--yellow);
+    grid-template-columns: repeat(5, 130px);
+    /* justify-items: center;
+    align-items: center; */
+    place-items: stretch stretch;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.itm {
+    background: white;
+}
+
+.itm5 {
+    justify-self: center;
+    align-self: center;
+}

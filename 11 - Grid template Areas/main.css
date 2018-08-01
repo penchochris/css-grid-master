@@ -36,3 +36,18 @@ body {
 .footer {
     grid-area: footer;
 }
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,minmax(150px, 1fr));
+        grid-template-areas: 
+        "content content"
+        "sidebar-1 sidebar-2"
+        "footer    footer"
+    }
+
+    .footer {
+        grid-column: footer-start / footer-end;
+    }
+}
